@@ -9617,7 +9617,7 @@ set udg_playershesmh[1]=I2R(GetHeroStr(GetAttacker(),true))
 set udg_playershesmh[2]=I2R(GetHeroAgi(GetAttacker(),true))
 set udg_playershesmh[3]=I2R(GetHeroInt(GetAttacker(),true))
 set udg_playershesmh[4]=0.65*udg_isbravery[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]*(udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]+3)*(udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]+3)*SquareRoot(I2R(GetHeroStr(GetAttacker(),true))+I2R(GetHeroAgi(GetAttacker(),true))+I2R(GetHeroInt(GetAttacker(),true))*2)*udg_bravery[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/(2+udg_renshu/100)+udg_notbravery[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]*(((udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/5.00)+1.20)*(udg_playershesmh[1]+((udg_playershesmh[2]+(udg_playershesmh[3]*1.30))*I2R(udg_playertx[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]))))
-set udg_playershesmh[5]=(udg_playershesmh[4]*(1+I2R(udg_hpplus1[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.45-0.5*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10)+I2R(udg_hpplus2[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.25-0.25*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10)+I2R(udg_hpplus3[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.25-0.25*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10))*0.51)
+set udg_playershesmh[5]=(udg_playershesmh[4]*(1+I2R(udg_hpplus1[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.45-0.5*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10)+I2R(udg_hpplus2[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.25-0.25*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10)+I2R(udg_hpplus3[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.25-0.25*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10))*0.59)
 set udg_point=GetUnitLoc(GetAttacker())
 call ForGroupBJ(GetRandomSubGroup(4,GetUnitsInRangeOfLocMatching(130.00,udg_point,Condition(function Trig_huimiezhuans_Func008001002003))),function Trig_huimiezhuans_Func008A)
 call RemoveLocation(udg_point)
@@ -10246,7 +10246,7 @@ set udg_playermenghuanmh[1]=I2R(GetHeroStr(udg_heroname[GetConvertedPlayerId(Get
 set udg_playermenghuanmh[2]=I2R(GetHeroAgi(udg_heroname[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))],true))
 set udg_playermenghuanmh[3]=I2R(GetHeroInt(udg_heroname[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))],true))
 set udg_playermenghuanmh[4]=(((udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/5.00)+1.20)*(udg_playermenghuanmh[1]+((udg_playermenghuanmh[2]+(udg_playermenghuanmh[3]*1.10))*I2R(udg_playertx[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]))))
-set udg_playermenghuanmh[5]=(udg_playermenghuanmh[4]*0.50)
+set udg_playermenghuanmh[5]=(udg_playermenghuanmh[4]*0.66)
 call ForGroupBJ(GetUnitsInRangeOfLocMatching(130.00,GetUnitLoc(GetAttackedUnitBJ()),Condition(function Trig_menghuanwuqi2_Func006Func006001003)),function Trig_menghuanwuqi2_Func006Func006A)
 else
 endif
@@ -10326,7 +10326,7 @@ set udg_playerxuewumh[1]=I2R(GetHeroStr(udg_heroname[GetConvertedPlayerId(GetOwn
 set udg_playerxuewumh[2]=I2R(GetHeroAgi(udg_heroname[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))],true))
 set udg_playerxuewumh[3]=I2R(GetHeroInt(udg_heroname[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))],true))
 set udg_playerxuewumh[4]=(((udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/5.00)+1.20)*(udg_playerxuewumh[1]+((udg_playerxuewumh[2]+(udg_playerxuewumh[3]*1.10))*I2R(udg_playerydx[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]))))
-set udg_playerxuewumh[5]=(udg_playerxuewumh[4]*0.52)
+set udg_playerxuewumh[5]=(udg_playerxuewumh[4]*0.68)
 call ForGroupBJ(GetUnitsInRangeOfLocMatching(130.00,GetUnitLoc(GetAttackedUnitBJ()),Condition(function Trig_xuewuwuqi1_Func006Func006001003)),function Trig_xuewuwuqi1_Func006Func006A)
 else
 endif
@@ -10394,7 +10394,7 @@ set udg_playershijianmh[1]=I2R(GetHeroStr(udg_heroname[GetConvertedPlayerId(GetO
 set udg_playershijianmh[2]=I2R(GetHeroAgi(udg_heroname[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))],true))
 set udg_playershijianmh[3]=I2R(GetHeroInt(udg_heroname[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))],true))
 set udg_playershijianmh[4]=(((udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/5.00)+1.20)*(udg_playershijianmh[1]+((udg_playershijianmh[2]+(udg_playershijianmh[3]*1.10))*I2R(udg_playertx[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]))))
-set udg_playershijianmh[5]=(udg_playershijianmh[4]*0.13*(4+udg_burstkey))
+set udg_playershijianmh[5]=(udg_playershijianmh[4]*0.158*(4+udg_burstkey))
 call AddSpecialEffectTargetUnitBJ("overhead",GetAttackedUnitBJ(),"Abilities\\Spells\\Items\\TomeOfRetraining\\TomeOfRetrainingCaster.mdl")
 call DestroyEffect(GetLastCreatedEffectBJ())
 call UnitDamageTargetBJ(GetAttacker(),GetAttackedUnitBJ(),udg_playershijianmh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
@@ -10574,7 +10574,7 @@ set udg_playerchaonengmh[1]=I2R(GetHeroStr(GetAttacker(),true))
 set udg_playerchaonengmh[2]=I2R(GetHeroAgi(GetAttacker(),true))
 set udg_playerchaonengmh[3]=I2R(GetHeroInt(GetAttacker(),true))
 set udg_playerchaonengmh[4]=(((udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/5.00)+1.20)*(udg_playerchaonengmh[3]+((udg_playerchaonengmh[2]+(udg_playerchaonengmh[1]*1.10))*I2R(udg_playerjx[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]))))
-set udg_playerchaonengmh[5]=(udg_playerchaonengmh[4]*0.48)
+set udg_playerchaonengmh[5]=(udg_playerchaonengmh[4]*0.60)
 call ForGroupBJ(YDWEGetUnitsInRangeOfLocMatchingNull(120.00,GetUnitLoc(GetAttackedUnitBJ()),Condition(function Trig_chaonengzFunc004Func006001003)),function Trig_chaonengzFunc004Func006A)
 else
 endif
