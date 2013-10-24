@@ -2,6 +2,8 @@
 // xxxxxxxxxxxxxxxxxxxxeff
 //fffffffffffffffffffffff
 //zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+
+boolean udg_tureendfail=false
 trigger gg_trg_trueendclear=null
 timer udg_badendtimer
 timer udg_trueendtimer
@@ -31364,7 +31366,7 @@ endfunction
 
 function Trig_change1_Actions takes nothing returns nothing
 
-set udg_badend=true
+set udg_trueend=true
 call TriggerExecute(gg_trg_siwang)
 
 endfunction
@@ -46770,9 +46772,15 @@ call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[1])-0
 call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
 call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
 set udg_qinshilv=udg_qinshilv+0.23
+
 if(udg_qinshilv>99.75)then
+if(udg_tureendfail==false)then
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"混沌黑暗",null,"哈哈哈哈哈",bj_TIMETYPE_ADD,0.00,true)
+call DisplayTimedTextToForce(GetPlayersAll(),60.00,"|cffff0000只差一点点就胜利了，真可惜！")
+call DisplayTimedTextToForce(GetPlayersAll(),60.00,"|cffff0000只差一点点就胜利了，真可惜！")
+set udg_tureendfail=true
 call TriggerExecute(gg_trg_jieweidonghua)
+endif
 endif
 endfunction
 function InitTrig_trueenddrop takes nothing returns nothing
