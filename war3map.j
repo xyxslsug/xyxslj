@@ -46713,18 +46713,23 @@ set udg_badend=true
 endif
 endif
 
+
 if(udg_waves==13)then
+if(trueflag1==0)then
 if(udg_qinshilv<40)then
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"加油！！！",bj_TIMETYPE_ADD,0.00,true)
 set trueflag1=1
 endif
 endif
+endif
 
 if(trueflag1==1)then
 if(udg_waves==22)then
+if(trueflag2==0)then
 if(udg_qinshilv<30)then
 set trueflag2=1
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"你们一定能战胜命运的！！！",bj_TIMETYPE_ADD,0.00,true)
+endif
 endif
 endif
 endif
