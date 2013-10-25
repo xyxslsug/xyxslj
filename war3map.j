@@ -7628,7 +7628,7 @@ call DisplayTextToForce(GetPlayersAll(),"|cffffcc00学校进攻部队已被击�
 if(trueflag2==1)then
 if(udg_qinshilv<10)then
 set udg_trueend=true
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"绝对可以战胜命运的！！！！！",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"绝对可以战胜命运的！！！！！",bj_TIMETYPE_ADD,0.00,true)
 endif
 endif
 
@@ -7640,7 +7640,7 @@ endif
 
 
 
-
+if(not(udg_badend==true))then
 call StartTimerBJ(udg_mojie,false,250.00)
 
 
@@ -7660,6 +7660,7 @@ call CreateTimerDialogBJ(udg_mojie,"|cffff0000众神降临")
 set udg_mojieck=GetLastCreatedTimerDialogBJ()
 else
 call TriggerExecute(gg_trg_counter4)
+endif
 endif
 endif
 endfunction
@@ -19165,7 +19166,7 @@ function Trig_suijixiaoguai_Func002Func001Func001C takes nothing returns boolean
 if(not Trig_suijixiaoguai_Func002Func001Func001Func002C())then
 return false
 endif
-if(not(GetRandomInt(1,10+R2I(udg_qinshilv/10))==1))then
+if(not(GetRandomInt(1,8+R2I(udg_qinshilv/8))==1))then
 return false
 endif
 return true
@@ -20082,8 +20083,8 @@ if(udg_badend==true)then
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_N000_0186,"魔王",null,"你们以为就这样就打败我了吗",bj_TIMETYPE_ADD,0.00,true)
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_N000_0186,"魔王",null,"你们早就被侵蚀了哈哈哈哈哈",bj_TIMETYPE_ADD,0.00,true)
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"战神",null,"这是：？？？？？？头好晕",bj_TIMETYPE_ADD,0.00,true)
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"哎，学园已经被完全侵蚀了",bj_TIMETYPE_ADD,0.00,true)
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"那么，全都毁灭吧",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"哎，学园已经被完全侵蚀了",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"那么，全都毁灭吧",bj_TIMETYPE_ADD,0.00,true)
 call CreateNUnitsAtLoc(1,'X900',Player(11),GetRectCenter(gg_rct______________005),bj_UNIT_FACING)
 call SetUnitInvulnerable(GetLastCreatedUnit(),true)
 call StartTimerBJ(udg_mowangcon,false,10000)
@@ -20130,10 +20131,10 @@ endif
 if(udg_trueend==true)then
 call StartTimerBJ(udg_mowangcon,false,10000)
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"学园董事长",null,"我到底做了什么啊",bj_TIMETYPE_ADD,0.00,true)
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"终于醒过来了么",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"终于醒过来了么",bj_TIMETYPE_ADD,0.00,true)
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"混沌黑暗",null,"你们这帮学生！！！可恶！！！！",bj_TIMETYPE_ADD,0.00,true)
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"学园董事长",null,"我来替你们保护宿舍吧",bj_TIMETYPE_ADD,0.00,true)
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"一定要胜利哦，千万不要被侵蚀哦",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"一定要胜利哦，千万不要被侵蚀哦",bj_TIMETYPE_ADD,0.00,true)
 call SetUnitInvulnerable(gg_unit_h001_0004,true)
 call EnableTrigger(gg_trg_trueenddrop)
 
@@ -25921,7 +25922,7 @@ else
 endif
 //call CreateItemLoc('stel',udg_point)
 call CreateItemLoc('IF00',udg_point)
-call SetItemCharges(GetLastCreatedItem(),7)
+call SetItemCharges(GetLastCreatedItem(),6+GetRandomInt(1,5))
 
 call TriggerSleepAction((325.00*udg_shuaxinsj))
 call CreateNUnitsAtLoc(1,'ubdd',Player(PLAYER_NEUTRAL_AGGRESSIVE),GetRectCenter(gg_rct______________105),270.00)
@@ -46700,7 +46701,7 @@ set udg_point2=GetUnitLoc(GetTriggerUnit())
 set udg_qinshideathpoint=GetUnitLoc(GetTriggerUnit())
 set udg_oldpoint=GetRectCenter(gg_rct______________063)
 set qinshidistance=Distance(GetLocationX(udg_qinshideathpoint),GetLocationY(udg_qinshideathpoint),GetLocationX(udg_oldpoint),GetLocationY(udg_oldpoint))
-set qinshiup=(qinshidistance-3900)/(200000-trueflag1*10000-trueflag2*30000)
+set qinshiup=(qinshidistance-3900)/(150000-trueflag1*10000-trueflag2*30000)
 set udg_qinshilv=udg_qinshilv+qinshiup
 if(udg_qinshilv>99.99)then
 set udg_qinshilv=99.99
@@ -46719,7 +46720,7 @@ endif
 if(udg_waves==13)then
 if(trueflag1==0)then
 if(udg_qinshilv<40)then
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"加油！！！",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"加油！！！",bj_TIMETYPE_ADD,0.00,true)
 set trueflag1=1
 endif
 endif
@@ -46730,7 +46731,7 @@ if(udg_waves==22)then
 if(trueflag2==0)then
 if(udg_qinshilv<30)then
 set trueflag2=1
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"仙子精灵",null,"你们一定能战胜命运的！！！",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"你们一定能战胜命运的！！！",bj_TIMETYPE_ADD,0.00,true)
 endif
 endif
 endif
