@@ -34889,11 +34889,13 @@ endif
 set udg_mowang=GetSpellTargetUnit()
 call StartTimerBJ(udg_mowangwudi,false,180)
 
+if(udg_badend==false)then
 if(udg_selfdestruct>=2)then
 if(udg_countstop>=2)then
 call StartTimerBJ(udg_mowangcon,false,15)
 else
 call StartTimerBJ(udg_mowangcon,false,80)
+endif
 endif
 endif
 
@@ -34938,13 +34940,13 @@ call CreateNUnitsAtLoc(1,'Uear',Player(11),GetRectCenter(gg_rct______________035
 call CreateNUnitsAtLoc(2,'Bos8',Player(11),GetRectCenter(gg_rct______________035),bj_UNIT_FACING)
 call CreateNUnitsAtLoc(1,'Bos7',Player(11),GetRectCenter(gg_rct______________035),bj_UNIT_FACING)
 set udg_rabbit=udg_rabbit+8
-endif
 if(udg_countstop>=4)then
 call CreateNUnitsAtLoc(2,'Bos7',Player(11),GetRectCenter(gg_rct________000),bj_UNIT_FACING)
 call CreateNUnitsAtLoc(1,'Bos8',Player(11),GetRectCenter(gg_rct________001),bj_UNIT_FACING)
 call CreateNUnitsAtLoc(2,'Bos9',Player(11),GetRectCenter(gg_rct________001),bj_UNIT_FACING)
 call CreateNUnitsAtLoc(1,'Bos0',Player(11),GetRectCenter(gg_rct________001),bj_UNIT_FACING)
 set udg_rabbit=udg_rabbit+8
+endif
 endif
 call CreateNUnitsAtLoc(2,'Bos9',Player(11),GetRectCenter(gg_rct______________063),bj_UNIT_FACING)
 call CreateNUnitsAtLoc(2,'Etyr',Player(11),GetRectCenter(gg_rct______________063),bj_UNIT_FACING)
@@ -34969,7 +34971,9 @@ endif
 call CreateNUnitsAtLoc(2,'Bos8',Player(11),GetRectCenter(gg_rct______________063),bj_UNIT_FACING)
 call CreateNUnitsAtLoc(3,'Ud01',Player(11),GetRectCenter(gg_rct______________063),bj_UNIT_FACING)
 set udg_rabbit=udg_rabbit+8
-
+if(udg_badend==false)then
+set udg_rabbit=0
+endif
 endif
 endif
 //set udg_con=udg_con+2
