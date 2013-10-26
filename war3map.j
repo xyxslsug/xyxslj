@@ -46754,11 +46754,11 @@ endfunction
 
 function Trig_badenddrop_Actions takes nothing returns nothing
 call SetUnitLifePercentBJ(udg_heroname[1],(GetUnitLifePercent(udg_heroname[1])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[2],(GetUnitLifePercent(udg_heroname[1])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[3],(GetUnitLifePercent(udg_heroname[1])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[1])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[1])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[1])-4.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[2],(GetUnitLifePercent(udg_heroname[2])-4.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[3],(GetUnitLifePercent(udg_heroname[3])-4.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[4])-4.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[5])-4.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[6])-4.00-udg_nanduBL))
 set udg_qinshilv=udg_qinshilv-0.13
 endfunction
 function InitTrig_badenddrop takes nothing returns nothing
@@ -46771,11 +46771,11 @@ endfunction
 
 function Trig_trueenddrop_Actions takes nothing returns nothing
 call SetUnitLifePercentBJ(udg_heroname[1],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[2],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[3],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[2],(GetUnitLifePercent(udg_heroname[2])-0.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[3],(GetUnitLifePercent(udg_heroname[3])-0.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[4])-0.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[5])-0.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[6])-0.00-udg_nanduBL))
 set udg_qinshilv=udg_qinshilv+0.23
 
 if(udg_qinshilv>99.75)then
