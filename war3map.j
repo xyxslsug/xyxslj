@@ -4524,6 +4524,42 @@ call CreateQuestBJ(bj_QUESTTYPE_REQ_DISCOVERED,"特殊BOSS简介","双子恶魔�
 call CreateQuestBJ(bj_QUESTTYPE_REQ_DISCOVERED,"侵蚀率","1.侵蚀率的作用\n侵蚀率不仅影响着整个游戏流程，而且还影响装备的掉落概率，以及游戏的结局，因此侵蚀率的控制至关重要\n侵蚀率初始值为50%，最低为0%，最高位100%\n\n2.侵蚀率的变化：\n学校的进攻怪存活时间越多，击破时下降的侵蚀率越多，如果存活时间过长会使侵蚀率上升的，因此最速击破进攻怪来降低侵蚀率吧\n英雄死亡后会大幅增加侵蚀率，因此尽量避免死亡吧\n\n3.分歧点\n当侵蚀率打到100时，立即进入badend，当23波后侵蚀率大于50时，也立即进入badend\n当31波后侵蚀率小于10时，则会进入Trueend\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
 call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"渡劫","人物达到30级可以渡天劫，学习专属技能。\n人物达到120级可以入世重修，得到各种奖励。\n人物达到180级可以渡神劫，可以领悟天道法则。\n人物达到300级在一定条件和几率下可以成圣。\n\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
 
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"装备合成+装备掉落1","小怪掉落 贤者之腿+力量之靴+风灵之靴+合成石=鬼王之靴\n红龙区 XX翅膀+翅膀之心+仙石=XX翅膀真\n4个不同的翅膀真+神石=神之翼\n凤凰蛋=鸟窝内4个MAX装备 袍MAX+靴MAX+斧MAX+项链MAX \n神之翼+凤凰蛋+风雷冰炎四大宝石之一=神之翼初\n2个神之翼初+升级之石=神之翼高\n天仙区 树精 掉落 精灵之舞 冰晶手镯 雷电手镯 三件+仙石=天仙手镯 \n天仙手镯+幻妖链+神石=幻妖神链\n王母区 小怪 掉落 禁锢之戒（敏） 极光之戒（智） 海王之戒（力） 三件+仙石=上神指环\n西王母 掉落 天雷道袍（初） 夜之悔恨（初 通宵） 扭曲的虚空之刃（初 贱） 枯木龙吟琴（初 淫荡）\n天雷初+天雷初+神石=天雷中 \n天雷中+天雷中+神石=天雷高 \n3件武器 一样可以合成高\n在停怪处可合成基地右上角\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"装备合成+装备掉落2","\n海神区 小怪 青蛙 神奇的箱子 毒龙 神奇的珠子 海神门卫 神奇的戒子\n海神之心+神奇的箱子+神奇的珠子+神奇的戒子=海域溟歌环\n月光宝盒上+下+神石 合成后 使用出怪出左上角 会出现传送门 可以去异空间\n神之剑=青海冥域弓LV.MAX+焰分噬浪尺LV.MAX+玄水菩提扇LV.MAX\n黄昏十二乐章= 黄昏十二乐章+乐章散件（12个） 在主神区合成 \n妖精的祝福=小妖精的指环+小妖精的帽子+妖精王之琴+魔法石\n神的徽章 在入世老头那买魔法壶+风雷冰炎四大宝石合成阿拉丁神灯 到后山召唤魔人\n杀死魔人掉落神的徽章（建议沉默后再杀）\n神的祝福 诅咒之轮诅咒277此后+合成石+仙石+神石 合成\n灵力袍=高天雷+阿拉丁神灯+魔法石\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"装备合成+装备掉落3","五行之戒 入世老头初接五行任务获得\n七届命由（初）=五行之戒+红颜之怒+轩辕剑魂（8号掉）+神石\n七届命由（初）=五行之戒+圣者指环+泪光晶坠+轩辕剑魂（8号掉）+神石\n七届命由（高）=七届命由（初）+混沌披风假+开天+人物不死+神石\n开天=倍击+轩辕剑+轩辕剑魂+上神指环+神石\n七彩宝石碎片1+七彩宝石碎片2=守之宝石\n七彩宝石碎片3+七彩宝石碎片4=力之宝石\n七彩宝石碎片5+七彩宝石碎片6=技之宝石\n守之宝石+力之宝石+技之宝石+时之宝石=七彩宝石\n统御指环（初）+法则轮子+仙石或神石=统御指环（中）\n统御指环（中）+统御指环（初）+法则轮子=统御指环（高）\n幻妖神链=幻妖链+天仙手镯+神石\n圣皇法衣LV.1+升级之石=圣皇法衣LV.MAX\n玄水菩提扇LV.1+升级之石=玄水菩提扇LV.MAX\n青海冥域弓LV.1+升级之石=青海冥域弓LV.MAX\n焰分噬浪尺LV.1+升级之石=焰分噬浪尺LV.MAX\n停怪处合成\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"装备出处1","青龙掉落仙石或神石\n主任区  小怪掉落  贤者之腿  力量之靴  风灵之靴\n主任   掉落  极乐战甲  徘徊者的利刃 通宵  处女之剑 淫荡   无坚不摧之力 贱\n红龙区  小怪  掉落  翅膀之心\n5波前掉落诅咒之轮\n火龙掉落  天使之翼  圣灵之翼  暗黑之翼  飞龙之翼\n天仙区  树精 掉落 精灵之舞  冰晶手镯  雷电手镯\n天仙 掉落 圣骨战甲  黎明之神（通宵）  毁灭之刃（贱）  诺克西之剑（淫荡）\n教皇区  小怪   掉落超级经验之书\n教皇  掉落  缺月五光铠  瞬都罗喉封狱箭  紫晶星辰巨剑  隆起努斯之枪\n月光宝盒  小怪掉落三件千年药草  杀死盒子  基地护甲+200  月光宝盒（上或下）  守护女神  掉落乐章散件\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"装备出处2","王母区  小怪  掉落  禁锢之戒（敏）  极光之戒（智）  海王之戒（力）  三件+仙石=上神指环\n西王母  掉落  天雷道袍（初）  夜之悔恨（初  通宵）   扭曲的虚空之刃（初  贱）  枯木龙吟琴（初  淫荡）\n主神区   小怪掉落    禁锢之戒（敏）  极光之戒（智）  海王之戒（力）   乐章散件   随机掉落\n主神掉落  黄昏十二乐章（初）\n学校后山  祝融掉落  神之守护  刑天掉落破甲神符  三圣道人掉落毁灭神符+番茄 土豆   太上老君掉落躲避神符\n海神区  小怪  青蛙  神奇的箱子  毒龙  神奇的珠子  海神门卫  神奇的戒子\n海神掉落  圣皇法衣LV.1  焰分噬浪尺LV.1  青海冥域弓LV.1   玄水菩提扇LV.1   海神之心\n广成子   小怪  仙石神石\n广成子  永恒日轮  九色虹飘带  毁灭之轮  空间之轮  时间之轮  速度之轮    统御指环  红颜之怒  泪光晶坠  圣者指环  宵暗之镯  幻妖链..\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"装备出处3","\n小妖精  掉落 法则轮子  妖精秘传书  凤凰蛋  幻妖链\n杀死主神后  后山会出现  小妖精①—⑤号（按妖精秘传书杀）  杀死后 主神区出现妖精王   掉落妖精王之琴\n不按顺序杀  会掉落妖精王之琴+神之衣\n杀死妖精①—⑤号主任区会出现  幻神  掉落魔法石\nATM（鸿钧道人）    月光宝盒上+下+神石  合成后  使用出怪出左上角  会出现传送门  可以去异空间\n攻击平凡的人   鸿钧才会出现  掉落  混沌披风真  混沌披风假  时之宝石  \n护甲为1190的农民杀死有几率掉落神之衣  圣皇法衣LV.1  2  MAX\n神的徽章\n在入世老头那买魔法壶+风雷冰炎四大宝石合成阿拉丁神灯\n到后山召唤魔人\n杀死魔人掉落神的徽章（建议沉默后再杀）\n1—8号BOSS掉落相应名字的装备\n1吸血，2减防，3倍击，4生命，5反弹，6攻击，7凤凰，8剑魂\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"特殊BOSS1","妖神\n打发\n直接打\n掉落七彩宝石碎片5或6\n死后会减少杀死他的人300全属性\n食神\n打发\n宝宝买鸡腿水果扔在地上食神就不会攻击每个鸡腿水果持续时间有限要轮流着扔\n掉落七彩宝石碎片3或4\n武神\n打发\n持续攻击武神40秒凤凰+英雄轮流或者回血速度超快\n掉落七彩宝石碎片1或2\n虚神\n打发\n打虚神会出现四只兔子先杀兔子才能撒谎四虚神兔子红血是会无敌然后会吸收伤害等兔子回复正常的时候再打兔子死完后再杀虚神（每个过程都有系统提示）\n掉落七彩宝石碎片1-6+升级之石\n\n冥神\n打法\n再打冥神的时候冥神会使用大魔法所以要带上足够的僵尸药水\n随即掉落西王母区四个高阶武器中一个\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"特殊BOSS2","喜爱恶作剧的双子恶魔\n打发\n双子恶魔拥有无限复活的能力（自带诅咒之轮），想要破除此能力需要在击杀一只恶魔后趁其未复活迅速击杀另一只恶魔，成功后系统会出现字幕“怎么会这样！”，然后复活的恶魔将失去重生能力（身上无诅咒之论）\n掉落四大法则轮子+每个300专属经验\n必须在一个没复活前杀死另一个\n灵神\n打发\n灵神每攻击一下等级会提升一级因此想把法阻止灵神升级低等级的灵神很容易\n掉落魔法石\n破坏神\n打发\n破坏神有九个阶段1.无视闪避暴击1.无视闪避暴击\n2.范围伤害\n3.一定几率定身\n4567吸收伤害，反弹伤害，附带吸血，附加高额伤害\n8.回血1%\n9.一定概率无敌1秒\n10，获得前面的所有状态，10秒内不受伤害则回复至满血\n主要是专属等级触发要高必要时可用法则卡住掉\n落神之翼初+神圣法衣\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"地图说明1","一：英雄系统\n地图目前已有20多个英雄，其中有战士，法师，刺客，召唤，辅助等各种类型的英雄。英雄各具特色，有的杀BOSS厉害，有的清怪强；有的前期厉害，有的优势后期才能体现。\n 二：装备和副本系统\n装备共分为3大类 \n1类：物理输出装，靠商店合成和挑战BOSS获得。\n 2类：属性输出装，靠挑战高级副本获得。\n 3类：特殊道具装，特殊道具都具有唯一性，靠高级副本获得。\n 三：渡劫系统 \n英雄达到30级即可渡天劫，可获得属性和专属技能，专属技能靠杀怪升级。 \n英雄达到180级即可渡神劫，可以领悟天道法则，即时间、空间、速度、毁灭四大法则中的一种，都是非常强大的技能。\n英雄达到300时在一定条件和几率下可以成圣，圣之下一切皆为蝼蚁。\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"地图说明2","四：游戏过程\n1，一共防守33波怪，期间可以停怪。\n2，20波以后的怪有异常强大的技能，玩家必须选择合适的装备，以及在适当的时候使用适当的物品才能通关。\n3 ，33波怪后会有众神降临，一共13波，全图BOSS混乱进攻基地。（校园的特色精华所在）\n五：人性化设置 \n1，每波怪的刷怪时间间隔与难度有关。\n2，游戏经验率和BOSS刷新时间都与当前游戏人数有关。 \n3，助手可以吃书吃药，使用回城，查看系数，交换物品等技能。\n 4，更多细心设置游戏中体会吧。\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"进攻怪物特性1","基地光环：在基地周围形成一种保护.我方单位站在光环内.可以回血.包括农民.所以尽可能的早点解决控电室.\n怪物介绍：1-31波\n1 .\n特性：对建筑双倍伤害.\n破解：买个农民跑到基地上方去站着不动.H住.尽量离基地远点.但是不能必须要求基地光环的保护.这样可以回血.农民不死.可以无视第1波.\n2 .\n特性：减伤\n破解：同第一波一样.农民不动.基地会在这个时候没有光环.所以宝宝去买个布衣.飞到农民的正上方烧死第2波.等级越高越好.\n3 \n特性：攻击速度很快\n破解：有家传衣服.只要买个1级的头盔.就可以去清了.头盔抵消伤害.衣服回血.基本顶第3波不掉血的.\n4 \n特性：诅咒 使英雄80%攻击MISS. \n破解：魔免也行.不魔免也行.基本这波无难度.\n5 \n特性：烧魔   \n破解：吃魔免 或者吃魔法药. 基本装备清无难度.\n6 \n特性 在尸体上招骷髅 这波完全就是刷钱的一波.\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"进攻怪物特性2","7 \n特性：净化 .\n破解：没什么难度\n8 \n特性：分裂攻击 \n破解：只要不要有友军单位在旁边帮忙打就行.不然分裂到你.会很疼的.\n剑神别分身 兽神别招猪 英雄别站一起 ，冰神和ck的专署会出水人和分身，注意控制\n9 \n特性：魔免 吞噬 溅射攻击 \n10 \n特性：空军+BOSS 1只\n破解： 看装备怎样.然后魔免.近战英雄有难度...\n11\n特性：对建筑伤害大\n破解：千万别让他A到基地.10波过去了.这波无难度  \n12 \n特性：近战反弹\n破解： 吃魔免 .\n13\n特性： 射程远 机械类 范围攻击\n破解：因为其射程很远.并且有时候不打英雄.去A基地.要特别注意.买几个农民在基地上方左右巡逻. 这样就没事了.\n14 \n特性：散播瘟疫.使英雄单位中毒.持续掉血\n破解：魔免 \n15\n特性；把英雄打到剩下一丝血，不会被打死\n破解；干打不要堆怪\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"进攻怪物特性3","16\n特性：无敌 \n破解：带上反伤.生命站着不动就行.也不要打怪..\n17 \n特性：隐身 \n破解：BB带显示宝石.\n18 \n特性：嘲讽 \n破解：4个反伤.1生命.1个真翅膀..直接全部反伤死怪.清得特别快.\n19 \n特性：死亡后自爆 分裂无效 自爆对建筑有效果 \n破解：吃魔免.身上带3个反伤.2个生命.1个翅膀站在基地上方光环处.如果没有这么多反伤.有多少带多少.尽量血厚点就能顶过去.\n20\n特性：分身 重击\n破解：与18波一样.同时BB可以沉默.避免分身.\n21 \n特性：空军(分裂无效) 毒 +BOSS一只\n破解：有凤凰就凤凰顶.英雄清.最好英雄先带2个反伤把BOSS先反死.\n22\n特性：攻击速度超快 \n破解：带个反伤就行了.无压力！ 同时可以在练级房保留这波怪.练MAX法衣之用.\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"进攻怪物特性4","23特性：分身无效\n破解：从这波开始就需要专属伤害清怪了..无难点 \n24\n特性： 陆战无敌，对陆攻击很高\n破解：尽量别让过多的怪打到你.放凤凰吸引怪.英雄清\n25 \n特性：破甲1000 \n破解：使用守护神符.站基地光环处清 \n26\n特性：神牛，无视防御的粉碎攻击 ，吃反弹\n破解：凤凰顶.英雄清.英雄千万别被包围.\n27 \n特性：1000防御.专属伤害无效\n破解：魔免.使用破甲神符..如果英雄技能很强大.可以把破甲神符留着清29波.更有效果27 \n28\n特性：100%200倍爆击 眩晕技能 分裂无效 \n破解：使用闪避神符 .\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"进攻怪物特性5","29\n特性：空军(分裂无效) 死亡后变蛋 一定时间后复活 \n破解：需要操作.控制打蛋.这波有难点.如果有教皇的冰枪.打蛋很实用 \n30\n特性;攻击下就会回到出怪点\n破解;英雄站在怪达不到的地方，放凤凰\n31\n特性：100%闪避 重击 属性伤害技能无效\n破解：使用毁灭神符...如果26波没有用破甲神符.使用破甲神符效果更佳.空间法则也是清这波怪的首选\n32 \n特性：攻击高 2倍爆击.\n破解：这波和28波就是众神前最大的难点了.尽量站基地光环处能做到秒怪.如果不行.利用凤凰顶.英雄清来解决.\n33\n特性：只攻打建筑物\n破解：多积累点农民.守住家.英雄清快点","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"注意要点和小技巧1","1，开局打掉食堂就会有药店，在右侧出怪口的下面，打掉食堂给1W奖励，任务交了会有跑鞋，细心的玩家会发现，跑鞋有别于速度之靴，是200点移动。\n2，后山的任务，水果鸡腿BB也可以买，这样收入效率才高，很多人是英雄跑着买。\n3，渡劫很难点到云，那就用A键，或者巡逻P键，自动寻找目标。 \n4，不要小看家传宝衣的作用，无论是前期守家还是打钱，一定做一个，省药也会安全很多。 \n5，渡天劫有可能是二重的，在原有奖励上额外奖励500点3V或单V1000，渡神劫有可能是九重的，专属+3，触发几率+3！ \n6，此图前期要求攻击力，后期要求的是全属性，系数，以及专属等级，靠被动属性输出，输入link可查看。\n \n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"注意要点和小技巧2","7，黄昏十二乐章，最大作用是用来清除26波和29波的怪，还有对于28清凤凰蛋也有不小的帮助。\n8，月光宝盒在教皇的上面，迷宫走法为，左 右 右 左 左上。 \n9，渡天劫，可以吃个速度卷轴和小布丁，会安全很多。10，杀天仙级以上的BOSS要吃魔免，BOSS有被动技能，不吃魔免随时可能秒你。近战杀5号反伤BOSS也要吃魔免 \n11，反伤可以用来反生命和广成子，广成子有嘲讽技能. \n12，杀主任和广成子.主神.沉默再打，沉默效果消失以后，BOSS依然不会放技能，除非BOSS被击晕了。 \n13，只有上神爆的武器和衣服才可以合成，两样相同的放在7，8位置+神石在4。用BB去基地右上方合成。 \n \n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"注意要点和小技巧3","14，有人会觉得力量神太差了，力量的专属是靠被动反伤，力量神更大的作用是辅助。耐抗. \n15，多利用凤凰帐，凤凰可以帮你顶怪，对通关有很大帮助。通关必备. \n16，5波蜘蛛那波，买几个农民去基地前方顶着，晚点杀，6波法师可以召唤尸体出骷髅，钱灰常多。保守估计60W+！ \n17，成圣有条件的，前提是专属等级有25级，且没有死过，到300级自动成圣，有红色，1500点3V，专属等级+3\n18，10波，14波，20波，26波，29波，吃魔免可以有效减伤。注意13波的投石车，超级远程，不及时去清会悲剧。19，16波的隐形怪，如果基地没有出现其他别的怪.可以不用管，是不会打基地的，这样给你争取了更多的BOSS时间。 \n20，单通的话最好的停怪时间为7波怪.11波.16波，21波，25波，30波.多通则为4波，10波，15波，20波，25波，30波。\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"注意要点和小技巧4","21，所有英雄的大技能无视魔免。 \n22，杀最后的魔王需要轩辕剑魂破甲，挑战8号BOSS获得。 \n23，月光宝盒上半部分+下半部分+神石，点击使用，会打开异空间通道，击杀BOSS获得披风，黄字为假的，红色为真的。击杀农民获得神之衣 \n24，难度6如何选择？开局选难5，游戏开始后一分钟内输入-BT.难6如何选择？开局选难5，游戏开始后一分钟内输入两次-BT.单人模式不能开启难7. \n25，杀海神的时候要吃魔免，把海神向外带一带在杀，不然回血超快，难杀。 \n26，锄头越多，伐木的速度越快，要伐蓝色的，绿色的不会有木头。一般4把锄头最好 .\n27，身上有魔免开守护神符是没有效果的，切记！其他符可以。 \n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"注意要点和小技巧5","28，五行之戒任务，必做！基地右下方，传送到世外桃源就可见NPC接任务，一共要杀5个BOSS，青龙，红龙，天仙，上神，挑战的6号。五行之戒可合成七界命由〈初阶〉 \n29，入世重修的位置同五行的位置一样，重修想得心应手要多练习，奖励很丰富，有30系数！ \n30，28波注意打凤凰蛋，不然凤凰无限重生，要悲剧的。\n31，合成石在后山的最上方，极少地狱火100%掉落，青龙2/3掉仙石，1/3掉神石，另外月光宝盒处的小怪有几率掉落神石。 \n32，天仙以上的BOSS会出自定义物品：幽灵传说是杀怪增加专属经验，猪头的测试工具是减200防。蝶舞清灵的乖乖是增加300防。佩带幽灵传说有1/2几率杀怪专属值奖励2点. \n33，减防和吸血不能同时用。如果身上有BOSS掉的武器而需要减BOSS的防，注意利用BB的W技能将武器和减防切换使用。 \n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"注意要点和小技巧6","34。东西+南北+合成石=东南西北，点击使用，单体眩晕技能. \n35.神之守护是用来抵挡24波的破甲1000的特殊怪.\n破甲神符是用来清26波的防御1000的特殊怪.\n闪避神符是用来抵挡27波的100%暴击特殊怪.\n毁灭神符是用来清29波的特殊怪.当然如果有如果使用破甲神符效果更佳.或者等怪出完使用空间法则.全秒! \n36.反伤可以反一切近战怪.佩带越多.反的伤害也多.最大的秒用反生命.反广成子.清17. 18. 19以及清21波的超级攻速怪. \n37.控电室越早解决越好.这样在基地是光环范围内能自动回血.特别是清怪时翅膀回血不够快.就站基地光环内杀怪.效果会很好. \n38.21波的的时候.在练级房留一批21波的怪.在后期多带几个加强防御的物品.进去练法衣.很快可以练到MAX级!神圣法衣虽然0防御.但是其生命多.闪避90%.0.1秒抵挡魔法伤害效果.属性+1000的性能.无疑证明了它的强大. \n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"注意要点和小技巧7","39.三圣道人掉落土豆和番茄.此两种物品自动合成.1/2几率专属等级+1 \n40.校园3.0纪念版的游久诅咒之轮.佩带此物者被攻击有几率触发诅咒.被诅咒者将被减少属性7点.当诅咒失败将会形成祝福增加属性40-80点.失败的几率与怪物的波数有关.越到后期被祝福的几率就越大.当诅咒777次的时候全属性增加2777.〈第27波后才会触发〉.触发属性+2777后的诅咒之轮才能合成勋章！建议大家在27波后练此轮.可在练级房留第3波 第21波攻速快的怪！\n游久勋章合成：诅咒777次后.诅咒之轮+合成石+仙石+神石头=游久勋章〈生命40W.触发+2.无限复活.无诅咒〉\n注：难度一诅咒之轮不会带有诅咒.当然也不会合成.其他难度前期最好别总是带着.毕竟前期绝对是属性减的多.加的少.后期就不一定了.特别是第3波怪.攻速高.特别注意！ \n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"注意要点和小技巧8","41.诅咒之轮的技巧.诅咒之轮第3波不会被诅咒`!!!这是为了避免玩家被第3波无情的诅咒关于后期练  脸不好的时候属性降低严重的问题. 留第3波的怪在练级房` 度劫前去练.反正属性不高.被扣完了也没事.直接练到700+ 然后就不练了.然后后期在练级房留21波的怪.等到第28波.再去练21的怪 `这样不就是自动奖励了2777了.并且属性也不会减少.建议和法衣一起练!!特别要提醒的`  千万别在27波前把轮子练到777.这样就白废了! 不会奖励并且你要知道.勋章的合成是建立在属性奖励的前提下才能合成! \n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+
+
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"任务全解1","前期任务：\n后山入口NPC\n鲜花任务：英雄进入后山NPC处接.收集10朵鲜花.回到NPC身边.完成任务.奖励家传宝衣.\n水果任务：英雄送水果到后山右下角的鸡腿任务NPC处.并且接了他任务.才算完成.送鸡腿也是如此.水果和鸡腿可以积累到多个一起送.每次奖励1W金币.\n项链任务：杀死后山的强盗.有几率掉落项链.然后交还NPC.奖励家传项链.做完此任务.可杀死强盗头子.掉落强盗项链.拥有格挡效果噢.很不错的.\n后山往海神区那边的入口NPC\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"任务全解2","送水任务：英雄在NPC处拿到空瓶.走到后山左上方的泉水处.则会自动装满水.然后回到NPC处.任务完成.奖励2W.\n砍树任务：接了任务.在基地下面的商店买把1W金币的刀.在后山砍掉白色的树.则会掉落木头.拿木头回到NPC处.任务完成.奖励2木.\n注意：要砍银白色的树才会掉落木头.其他树无效果.有6颗白色的树.此任务乃前期停怪最好的一个任务.因为奖励多.木头可以积累在一起.然后再去交.前期赚钱停怪的最佳任务.\n提示：记得多买点刀.等商店买刀的CD好了就再买一把刀.一般买到4把刀就行了.刀越多.砍木越快.\n中后期期主要任务：\n渡天劫：英雄必须满30级才能度.成功后将习得专属技能.是中后期通关的主要输出技能.所以越早度天劫.越好.\n\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"任务全解3","专属伤害详解：专属的伤害是根据英雄专属等级.属性.系数来影响的.并且有发动几率.发动几率越高.专属的触发就越多\n全英雄度劫经验攻略-校园修神录论坛-wanwan.uuu9.com\n五行任务：任务NPC在世外桃源入口出.接任务后，杀死青龙.红龙.天仙.上神.攻击这5个BOSS.然后回到NPC处.任务完成.奖励五行之戒〈通关必备物品.特别是合成七界命由后.绝对强大〉\n入世重修：120级方可进入.也是在五行任务NPC处接.如何完成任务.可参考论坛视频.完成后.奖励XX点全属性.30系数.并且习得重修技能.\n视频教程展示-校园修神录论坛-wanwan.uuu9.com\n吴刚任务：NPC在主神下方.上神上方处.杀死周围小怪10只.任务完成.奖励全属性300点.\n度神劫： 英雄必须满240级才能度.成功后将得到专属等级+1.触发增加20%奖励\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
+
+
+
 call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"渡劫和成圣","英雄30级可渡天劫\n因为英雄不同堵截方法也不一样请认真考虑适合英雄特色的渡劫方法\n英雄120级可以入世重修重修后可获得重修技能，全属性，30全系数\n180级可以学习天道法则不同的法则有不同的用处都是非常强大的技能\n英雄240级可以渡神劫神劫难度颇大 且机会只有一次请慎重考虑渡神劫可获得专属等级+1 触发+2的奖励\n具体方法请参考校园修神录论坛-wanwan.uuu9.com内的录像\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
 call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"专属介绍","每个英雄在30级渡过天劫之后会自动学习专属技能\n在10波后伤害就会慢慢由物理输出改为专属伤害\n所以在校园专区专属等级和触发非常重要\n专属等级可以靠守家或打BOSS获得专属经验来升级\n专属触发一般都是由装备加的\n所以校园装备的搭配不是固定的看专属等级和触发决定的\n专属的伤害于专属等级和系数有关所以后期装备一般都是由以自己系数相同的武器+衣服+翅膀+3个加触发的装备\n","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
 call CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED,"命令","hc          可瞬间回城\nhg          可瞬间回城\nlink        查看英雄相关系数\n键盘向上键  恢复视角\nyz          装备特殊装备时可用的命令\nzisha       输入此命令可杀死自己","ReplaceableTextures\\CommandButtons\\BTNAmbush.blp")
@@ -8694,6 +8730,25 @@ endif
 endif
 return false
 endfunction
+
+function Trig_loverwuqi_Func001Func006001003001 takes nothing returns boolean
+return(IsUnitAliveBJ(GetFilterUnit())==true)
+endfunction
+function Trig_loverwuqi_Func001Func006001003002 takes nothing returns boolean
+return(IsUnitEnemy(GetFilterUnit(),GetOwningPlayer(GetAttacker()))==true)
+endfunction
+function Trig_loverwuqi_Func001Func006001003 takes nothing returns boolean
+return GetBooleanAnd(Trig_loverwuqi_Func001Func006001003001(),Trig_loverwuqi_Func001Func006001003002())
+endfunction
+function Trig_loverwuqi_Func001Func006A takes nothing returns nothing
+call AddSpecialEffectTargetUnitBJ("overhead",GetAttackedUnitBJ(),"Abilities\\Spells\\Other\\Tornado\\TornadoElementalSmall.mdl")
+call DestroyEffect(GetLastCreatedEffectBJ())
+call UnitDamageTargetBJ(GetAttacker(),GetEnumUnit(),udg_playerpkingmh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
+if(GetUnitTypeId(GetEnumUnit())=='Bos1')then
+call SetHeroLevelBJ(GetEnumUnit(),(GetUnitLevel(GetEnumUnit())+1),true)
+endif
+endfunction
+
 function Trig_loverwuqi_Actions takes nothing returns nothing
 if(Trig_loverwuqi_Func004C())then
 set udg_playerlovermh[1]=I2R(GetHeroStr(GetAttacker(),true))
@@ -8701,9 +8756,9 @@ set udg_playerlovermh[2]=I2R(GetHeroAgi(GetAttacker(),true))
 set udg_playerlovermh[3]=I2R(GetHeroInt(GetAttacker(),true))
 set udg_playerlovermh[4]=0.65*udg_isbravery[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]*(udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]+3)*(udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]+3)*SquareRoot(I2R(GetHeroStr(GetAttacker(),true))+I2R(GetHeroAgi(GetAttacker(),true))+I2R(GetHeroInt(GetAttacker(),true))*2)*udg_bravery[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/(2+udg_renshu/100)+udg_notbravery[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]*(((udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/5.00)+1.20)*(udg_playerlovermh[1]+((udg_playerlovermh[2]+(udg_playerlovermh[3]*1.30))*I2R(udg_playertx[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]))))
 set udg_playerlovermh[5]=(udg_playerlovermh[4]*(1+I2R(udg_hpplus1[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.45-0.5*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10)+I2R(udg_hpplus2[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.25-0.25*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10)+I2R(udg_hpplus3[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.25-0.25*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10))*0.60)
-call AddSpecialEffectTargetUnitBJ("overhead",GetAttackedUnitBJ(),"Abilities\\Spells\\Other\\Tornado\\TornadoElementalSmall.mdl")
-call DestroyEffect(GetLastCreatedEffectBJ())
-call UnitDamageTargetBJ(GetAttacker(),GetAttackedUnitBJ(),udg_playerlovermh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
+call ForGroupBJ(GetUnitsInRangeOfLocMatching(100.00,GetUnitLoc(GetAttackedUnitBJ()),Condition(function Trig_loverwuqi_Func001Func006001003)),function Trig_loverwuqi_Func001Func006A)
+
+//call UnitDamageTargetBJ(GetAttacker(),GetAttackedUnitBJ(),udg_playerlovermh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
 else
 endif
 endfunction
@@ -32406,6 +32461,12 @@ endif
 if((GetUnitTypeId(GetTriggerUnit())=='Bos0'))then
 return false
 endif
+if((GetUnitTypeId(GetTriggerUnit())=='Uear'))then
+return false
+endif
+if((GetUnitTypeId(GetTriggerUnit())=='NS01'))then
+return false
+endif
 if((IsUnitType(GetTriggerUnit(),UNIT_TYPE_HERO)==true))then
 return true
 endif
@@ -46723,7 +46784,7 @@ endif
 
 if(udg_waves==13)then
 if(trueflag1==0)then
-if(udg_qinshilv<40)then
+if(udg_qinshilv<45)then
 call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"加油！！！",bj_TIMETYPE_ADD,0.00,true)
 set trueflag1=1
 endif
@@ -46753,12 +46814,12 @@ call TriggerAddAction(gg_trg_qinshideath,function Trig_qinshideath_Actions)
 endfunction
 
 function Trig_badenddrop_Actions takes nothing returns nothing
-call SetUnitLifePercentBJ(udg_heroname[1],(GetUnitLifePercent(udg_heroname[1])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[2],(GetUnitLifePercent(udg_heroname[2])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[3],(GetUnitLifePercent(udg_heroname[3])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[4])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[5])-4.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[6])-4.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[1],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL*2))
+call SetUnitLifePercentBJ(udg_heroname[2],(GetUnitLifePercent(udg_heroname[2])-0.00-udg_nanduBL*2))
+call SetUnitLifePercentBJ(udg_heroname[3],(GetUnitLifePercent(udg_heroname[3])-0.00-udg_nanduBL*2))
+call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[4])-0.00-udg_nanduBL*2))
+call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[5])-0.00-udg_nanduBL*2))
+call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[6])-0.00-udg_nanduBL*2))
 set udg_qinshilv=udg_qinshilv-0.13
 endfunction
 function InitTrig_badenddrop takes nothing returns nothing
@@ -46770,12 +46831,12 @@ endfunction
 
 
 function Trig_trueenddrop_Actions takes nothing returns nothing
-call SetUnitLifePercentBJ(udg_heroname[1],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[2],(GetUnitLifePercent(udg_heroname[2])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[3],(GetUnitLifePercent(udg_heroname[3])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[4])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[5])-0.00-udg_nanduBL))
-call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[6])-0.00-udg_nanduBL))
+call SetUnitLifePercentBJ(udg_heroname[1],(GetUnitLifePercent(udg_heroname[1])-0.00-udg_nanduBL-udg_selfdestruct))
+call SetUnitLifePercentBJ(udg_heroname[2],(GetUnitLifePercent(udg_heroname[2])-0.00-udg_nanduBL-udg_selfdestruct))
+call SetUnitLifePercentBJ(udg_heroname[3],(GetUnitLifePercent(udg_heroname[3])-0.00-udg_nanduBL-udg_selfdestruct))
+call SetUnitLifePercentBJ(udg_heroname[4],(GetUnitLifePercent(udg_heroname[4])-0.00-udg_nanduBL-udg_selfdestruct))
+call SetUnitLifePercentBJ(udg_heroname[5],(GetUnitLifePercent(udg_heroname[5])-0.00-udg_nanduBL-udg_selfdestruct))
+call SetUnitLifePercentBJ(udg_heroname[6],(GetUnitLifePercent(udg_heroname[6])-0.00-udg_nanduBL-udg_selfdestruct))
 set udg_qinshilv=udg_qinshilv+0.23
 
 if(udg_qinshilv>99.75)then
@@ -46802,7 +46863,7 @@ endif
 return true
 endfunction
 function Trig_trueenddef_Actions takes nothing returns nothing
-call SetUnitLifePercentBJ(GetAttacker(),(GetUnitLifePercent(GetAttacker())-udg_nanduBL/2))
+call SetUnitLifePercentBJ(GetAttacker(),(GetUnitLifePercent(GetAttacker())-udg_nanduBL/2-udg_selfdestruct/4))
 endfunction
 function InitTrig_trueenddef takes nothing returns nothing
 set gg_trg_trueenddef=CreateTrigger()
