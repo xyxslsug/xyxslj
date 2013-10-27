@@ -8743,7 +8743,7 @@ endfunction
 function Trig_loverwuqi_Func001Func006A takes nothing returns nothing
 call AddSpecialEffectTargetUnitBJ("overhead",GetAttackedUnitBJ(),"Abilities\\Spells\\Other\\Tornado\\TornadoElementalSmall.mdl")
 call DestroyEffect(GetLastCreatedEffectBJ())
-call UnitDamageTargetBJ(GetAttacker(),GetEnumUnit(),udg_playerpkingmh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
+call UnitDamageTargetBJ(GetAttacker(),GetEnumUnit(),udg_playerlovermh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
 if(GetUnitTypeId(GetEnumUnit())=='Bos1')then
 call SetHeroLevelBJ(GetEnumUnit(),(GetUnitLevel(GetEnumUnit())+1),true)
 endif
@@ -9703,15 +9703,39 @@ return false
 endif
 return true
 endfunction
+
+
+function Trig_huimiezs_Func001Func006001003001 takes nothing returns boolean
+return(IsUnitAliveBJ(GetFilterUnit())==true)
+endfunction
+function Trig_huimiezs_Func001Func006001003002 takes nothing returns boolean
+return(IsUnitEnemy(GetFilterUnit(),GetOwningPlayer(GetAttacker()))==true)
+endfunction
+function Trig_huimiezs_Func001Func006001003 takes nothing returns boolean
+return GetBooleanAnd(Trig_huimiezs_Func001Func006001003001(),Trig_huimiezs_Func001Func006001003002())
+endfunction
+function Trig_huimiezs_Func001Func006A takes nothing returns nothing
+call AddSpecialEffectLocBJ(GetUnitLoc(GetAttackedUnitBJ()),"Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl")
+call DestroyEffect(GetLastCreatedEffectBJ())
+call UnitDamageTargetBJ(GetAttacker(),GetAttackedUnitBJ(),udg_playershesmh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
+call UnitDamageTargetBJ(GetAttacker(),GetEnumUnit(),udg_playershesmh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
+call UnitDamageTarget(GetAttacker(), GetEnumUnit(), 1.00, true, false, ATTACK_TYPE_CHAOS, DAMAGE_TYPE_NORMAL, WEAPON_TYPE_WHOKNOWS)
+if(GetUnitTypeId(GetEnumUnit())=='Bos1')then
+call SetHeroLevelBJ(GetEnumUnit(),(GetUnitLevel(GetEnumUnit())+1),true)
+endif
+endfunction
+
+
 function Trig_huimiezhuans_______u_Actions takes nothing returns nothing
 set udg_playershesmh[1]=I2R(GetHeroStr(GetAttacker(),true))
 set udg_playershesmh[2]=I2R(GetHeroAgi(GetAttacker(),true))
 set udg_playershesmh[3]=I2R(GetHeroInt(GetAttacker(),true))
 set udg_playershesmh[4]=(((udg_jinengdengji[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]/5.00)+1.20)*(udg_playershesmh[1]+((udg_playershesmh[2]+(udg_playershesmh[3]*1.30))*I2R(udg_playertx[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))]))))
 set udg_playershesmh[5]=(udg_playershesmh[4]*(1+I2R(udg_hpplus1[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.45-0.5*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10)+I2R(udg_hpplus2[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.25-0.25*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10)+I2R(udg_hpplus3[GetConvertedPlayerId(GetOwningPlayer(GetAttacker()))])*(0.25-0.25*SquareRoot(GetUnitLifePercent(GetTriggerUnit()))/10))*0.45)
-call AddSpecialEffectLocBJ(GetUnitLoc(GetAttackedUnitBJ()),"Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl")
-call DestroyEffect(GetLastCreatedEffectBJ())
-call UnitDamageTargetBJ(GetAttacker(),GetAttackedUnitBJ(),udg_playershesmh[5],ATTACK_TYPE_NORMAL,DAMAGE_TYPE_UNIVERSAL)
+
+call ForGroupBJ(GetUnitsInRangeOfLocMatching(85.00,GetUnitLoc(GetAttackedUnitBJ()),Condition(function Trig_huimiezs_Func001Func006001003)),function Trig_huimiezs_Func001Func006A)
+
+
 endfunction
 function InitTrig_huimiezhuans_______u takes nothing returns nothing
 set gg_trg_huimiezhuans_______u=CreateTrigger()
@@ -46766,7 +46790,7 @@ set udg_point2=GetUnitLoc(GetTriggerUnit())
 set udg_qinshideathpoint=GetUnitLoc(GetTriggerUnit())
 set udg_oldpoint=GetRectCenter(gg_rct______________063)
 set qinshidistance=Distance(GetLocationX(udg_qinshideathpoint),GetLocationY(udg_qinshideathpoint),GetLocationX(udg_oldpoint),GetLocationY(udg_oldpoint))
-set qinshiup=(qinshidistance-3900)/(150000-trueflag1*10000-trueflag2*30000)
+set qinshiup=(qinshidistance-3900)/(160000-trueflag1*10000-trueflag2*30000)
 set udg_qinshilv=udg_qinshilv+qinshiup
 if(udg_qinshilv>99.99)then
 set udg_qinshilv=99.99
@@ -46785,7 +46809,7 @@ endif
 if(udg_waves==13)then
 if(trueflag1==0)then
 if(udg_qinshilv<45)then
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"加油！！！",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"！！！",bj_TIMETYPE_ADD,0.00,true)
 set trueflag1=1
 endif
 endif
@@ -46796,7 +46820,7 @@ if(udg_waves==22)then
 if(trueflag2==0)then
 if(udg_qinshilv<30)then
 set trueflag2=1
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"你们一定能战胜命运的！！！",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"境界之神",null,"！！！",bj_TIMETYPE_ADD,0.00,true)
 endif
 endif
 endif
@@ -46841,7 +46865,7 @@ set udg_qinshilv=udg_qinshilv+0.23
 
 if(udg_qinshilv>99.75)then
 if(udg_tureendfail==false)then
-call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"混沌黑暗",null,"哈哈哈哈哈",bj_TIMETYPE_ADD,0.00,true)
+call TransmissionFromUnitWithNameBJ(GetPlayersAll(),gg_unit_H000_0005,"混沌",null,"哈哈哈哈哈",bj_TIMETYPE_ADD,0.00,true)
 call DisplayTimedTextToForce(GetPlayersAll(),60.00,"|cffff0000只差一点点就胜利了，真可惜！")
 call DisplayTimedTextToForce(GetPlayersAll(),60.00,"|cffff0000只差一点点就胜利了，真可惜！")
 set udg_tureendfail=true
